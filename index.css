@@ -40,44 +40,7 @@ act a{
     
 }
 
-@media only screen and (min-width: 2000px)
-{
-
-    .oned a{
-        font-family: sans-serif;
-        text-decoration: none;
-        padding: 15px;
-        padding-right: 15px;
-    }
-    .me{
-        display: none;
-    }
-
-    .imag{
-        padding-top: 30vh;
-        text-align: center;
-    }
-
-    .imag img{
-        text-align: justify;
-        max-width: 70vw;
-    }
-
-    .buto img{
-        max-width: 60vw;
-    }
-
-    .oned{
-        padding-top: 20px;
-        text-align: left;
-        color: rgb(150, 176, 248);
-    
-       
-    }
-    
-}
-
-@media only screen and (min-width: 800px) and (max-width:2000px)
+@media only screen and (min-width: 800px)
 {
 
     .oned a{
