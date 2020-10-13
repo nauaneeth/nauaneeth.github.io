@@ -8,6 +8,7 @@ body
 {
     height: 100vh;
     width: 100vw;
+    overflow-x: hidden;
     background: linear-gradient(0.25turn, #d6352a,#f44336, #d6352a);
 }
 
