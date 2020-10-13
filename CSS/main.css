@@ -1,0 +1,291 @@
+@keyframes appel{
+    0%   {padding-top: 0%;}
+    60% {padding-top: 10px;}
+    100%   {padding-top: 0%;}
+}
+
+.apple img{
+    animation: appel 3.3s;
+    animation-iteration-count: infinite;
+    z-index: -1;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.apple{
+    text-align: center;
+    padding-top: 120px;
+    position: absolute;
+    left: 50vw;
+    z-index: -1;
+    transform: translate(-50%,0%);
+}
+
+.spanhold{
+    padding-top: 490px;
+    text-align: center;
+    float: middle;
+    z-index: 4;
+}
+
+.iii{
+    font-family: monospace;
+    color: white;
+    display: inline;
+    font-size: 43px;
+    font-weight: bolder;
+    padding-top: 1px;   
+}
+
+.iv{
+    font-family: 'Sora', sans-serif;
+    color: white;
+    display: inline;
+    font-size: 33px;
+    padding-top: 0px;  
+    font-weight: 400;
+}
+
+
+.chev{
+    text-align: center;
+    padding: 30px;
+}
+
+.chevson
+{
+    width:fit-content;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: -10px;
+    padding: 5px; color: white;
+    font-family: 'Sora', sans-serif;
+    cursor: pointer;
+    background-color: tomato;
+}
+
+.chevson a:hover
+{
+    font-size: 110%;
+}
+
+#about{
+    position: absolute;
+    z-index: -1;
+    display: none;
+    width: 100vw;
+    top: 20px;
+    left: 0;
+    text-align: center;
+}
+
+.info{
+    margin: 0 auto;
+    width: 500px;
+    padding-bottom: 60px;
+}
+
+.info p
+{
+    text-align: center;
+    font-family: 'Sora', sans-serif;
+    color: white;
+}
+
+@keyframes aboutt
+{
+    0%   {padding-top: 0%;}
+    50% {padding-top: 50px;}
+    100% {padding-top: 0%;}
+}
+
+@keyframes homme
+{
+    0%   {padding-top: 0%;}
+    60% {padding-top: 50px;}
+    100% {padding-top: 0px;}
+}
+
+
+
+.pic{
+    text-align: center;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+.pic img{
+    margin-top: 30px;
+    width: 250px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.picc{
+    padding-top: 0px;
+    margin: 0 auto;
+    padding: 0px;
+    animation: aboutt 1.3s;
+}
+
+.i{
+    font-family: 'Sora', sans-serif;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    margin-top: -2px;
+}
+
+.ii{
+    font-family: 'Sora', sans-serif;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    margin-top: -30px;    
+}
+
+#home{
+    animation: homme 1s;
+    
+}
+
+@keyframes workk
+{
+    0%{padding-top: 0%;}
+    50%{padding-top: 115px;}
+    100%{padding-top: 100px;}
+}
+
+#works
+{
+    animation: workk 1.2s;
+    display: none;
+    margin: 0 auto;
+    padding: 30px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+#works h1
+{
+    font-family: 'Sora', sans-serif;
+    color: white;
+}
+
+.workd .back
+{
+    display: inline-block;
+    background-color: rgb(31, 37, 43);
+    text-align: center;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+.back img
+{
+    width: 400px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+.back img:hover
+{
+    width: 410px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+.workd a
+{
+    text-decoration: none;
+    font-family: 'Sora', sans-serif;
+    cursor: pointer;
+}
+
+.workd a:link
+{
+    color: rgb(160, 175, 241);
+}
+
+.workd a:visited
+{
+    color: rgb(160, 175, 241);
+}
+
+.workd a:hover
+{
+    color: rgb(255, 255, 255);
+}
+
+.workd a:active
+{
+    color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width:600px)
+{
+    #her{
+        width: 80px;
+    }
+
+    .info{
+        margin: 0 auto;
+        width:80vw;
+        padding-bottom: 30px;
+    }
+
+    .back img
+    {
+        width: 70vw;
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (min-height:1000px) and (max-height:1400px)
+{
+    #her{
+        width: 80px;
+    }
+
+    .info{
+        margin: 0 auto;
+        width:80vw;
+        padding-bottom: 30px;
+    }
+
+    .apple{
+        text-align: center;
+        padding-top: 220px;
+        position: absolute;
+        left: 50vw;
+        z-index: -1;
+        transform: translate(-50%,0%);
+    }
+
+    .apple img{
+        animation: appel 3.3s;
+        animation-iteration-count: 20;
+        z-index: -1;
+        width: 400px;
+        margin: 0 auto;
+        text-align: center;
+        
+    }
+
+    .spanhold{
+        padding-top: 700px;
+        text-align: center;
+        float: middle;
+        z-index: 4;
+    }
+
+    .back img
+    {
+        width: 70vw;
+        border-radius: 10px;
+    }
+}
+

@@ -1,0 +1,162 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+}
+  
+body
+{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(0.25turn, #d6352a,#f44336, #d6352a);
+}
+
+.menu
+{
+    padding: 10px;
+    z-index: 4;
+}
+
+.menu ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menuli{
+    float: left;
+    padding: 20px;
+}
+
+.menuli p
+{
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: rgb(255, 212, 218);
+    cursor: pointer;
+}
+
+.menuli p:hover
+{
+    color: white;
+    font-weight: 700;
+}
+
+.less{
+    float: right;
+}
+
+.hemb{
+    display: none;
+    z-index: 5;
+}
+
+#change{
+    display:none;
+}
+
+#mone{
+    font-weight: none;
+    color:none;
+}
+
+#mtwo{
+    font-weight: none;
+    color:none;
+}
+
+#mthree{
+}
+
+@media only screen and (max-width: 600px)
+{
+    @keyframes tabb{
+        0%   {width: 0px;}
+        100% {width: 220px;}
+    }
+      
+    .less{
+        display: none;
+    }
+
+    .menuli{
+        float: left;
+        padding: 20px;
+        z-index: 5;
+    }
+
+    .hemb{
+        padding: 12px;
+        display: block;
+        float: right;
+        cursor: pointer;
+        z-index: 5;
+        display: fixed;
+    }
+
+    .hembin
+    {
+        width: 35px;
+        height: 5px;
+        background-color: rgb(255, 255, 255);
+        margin: 6px 0;
+        border-radius: 2px;
+        z-index: 5;
+    }
+
+    .changeso{
+        padding-top: 200px;
+        padding-left: 5.4em;
+    }
+
+    .changeso a
+    {
+        font-size: larger;
+    }
+
+    #change
+    {
+        background: black;
+        display: none;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        position: fixed;
+        height: 100%;
+        width: 220px;
+        animation: tabb 0.2s;
+
+    }
+
+    #chngimg{
+        position: absolute;
+        z-index: 5;
+        padding: 15px;
+        right: 0px;
+    }
+
+    #blur{
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(2px);
+        top:0;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        display: none;
+    }
+
+    #change p{
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+        cursor: pointer;
+        color: rgb(255, 212, 218);
+    }
+    
+    #change p:hover{
+        color: rgb(255, 212, 218);
+    }
+
+}

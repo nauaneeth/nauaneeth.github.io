@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navaneeth Venu</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="JS/main.js"></script>
+</head>
+<body>
+        <div class="menu">
+            <ul>
+                <li class=menuli onclick="about()"><p>Navaneeth Venu</p></li>
+                <div class="less">
+                    <li class="menuli" onclick="home()"><p id="mone" >Home</p></li>
+                    <li class="menuli" onclick="about()"><p id="mtwo" >About</p></li>
+                    <li class="menuli" onclick="work()"><p id="mthree" >Works</p></li>
+                </div>
+                <div class="hemb" onclick="opentab()">
+                    <div class="hembin"></div>
+                    <div class="hembin"></div>
+                    <div class="hembin"></div>
+                </div>
+                <div id="change">
+                    <div id="chngimg" onclick="opentab()"><i class="fa fa-window-close" aria-hidden="true" style="color:rgb(128, 15, 0)"></i></div>
+                    <div class="changeso">
+                        <p onclick="home(); closetab();" >Home</p><br>
+                        <p onclick="about(); closetab();" >About</p><br>
+                        <p onclick="work(); closetab();" >Works</p><br>
+                    </div>
+                </div>
+            </ul>
+        </div>
+        <div id="blur"></div>
+        <div id="home">
+            <div class="apple">
+                <img src="images/cartme2.svg">
+            </div>
+            <div class="spanhold">
+                <p class="iii">Good Design is</p>
+                <br>
+                <p class="iv">as little design as possible.</p>
+            </div>
+            <div class="chev" onclick="about()">
+                <div class="chevson"><a>About Me</a></div>
+            </div>
+        </div>
+        <div id="about">
+            <div class="picc">
+                <div class="pic"><img src="images/dp.jpg"></div>
+                <p class="i">Navaneeth Venu</p>
+                <p class="ii">Graphic Designer</p>
+            </div>
+            <table style="text-align: center; margin: 0 auto; max-width: 80vw;">
+                <tr>
+                    <td style="text-align: center; padding: 30px;">
+                        <progress id="her" value="90" max="100"></progress>
+                        <p style="color:white; font-family: 'Sora', sans-serif;">90% Web Design</p>
+                    </td>
+                    <td style="text-align: center; padding: 30px;">
+                        <progress id="her" value="60" max="100"></progress>
+                        <p style="color:white; font-family: 'Sora', sans-serif;">60% HTML 5</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; padding: 30px;">
+                        <progress id="her" value="70" max="100"></progress>
+                        <p style="color:white; font-family: 'Sora', sans-serif;">70% CSS</p>
+                    </td>
+                    <td style="text-align: center; padding: 30px;">
+                        <progress id="her" value="20" max="100"></progress>
+                        <p style="color:white; font-family: 'Sora', sans-serif;">20% Javascript</p>
+                    </td>
+                </tr>
+            </table>
+            <div class="info">
+                <p>I am a Second-Year Computer Science Engineering Undergraduate Student from Mar Baselios College of Engineering and Technology, Trivandrum.<br>I am keenly interested in designing and developing responsive static web pages. I also partake in UX/UI Prototyping (Figma)</p>
+            </div>
+            <div><div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="navaneethvenu"><a class="LI-simple-link" href='https://in.linkedin.com/in/navaneethvenu?trk=profile-badge' target="_blank">Navaneeth Venu</a></div></div>
+            <br><br>
+        </div>
+        <div id="works">
+            <h1>Works</h1>
+            <div class="workd">
+                <div class="back">
+                    <a href="https://alternaet.ga" target="_blank"><img src="images/work1.PNG"></a><br>
+                    <a href="https://alternaet.ga" target="_blank">View Site</a><br>
+                    <a href="https://github.com/nauaneeth/alternaet.github.io" target="_blank">View Code</a>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
+
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
