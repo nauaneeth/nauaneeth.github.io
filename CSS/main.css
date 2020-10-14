@@ -186,8 +186,15 @@
     border-radius: 20px;
     box-shadow: 20px 20px 15px #0000001f;
 }
+
+@keyframes backimg
+{
+    0%{width: 350px;}
+    100%{width: 400px;}
+}
 .back img
 {
+    animation: backimg 2s;
     width: 400px;
     border-radius: 10px;
     padding-bottom: 10px;
@@ -240,8 +247,15 @@
         padding-bottom: 30px;
     }
 
+    @keyframes backimg
+    {
+        0%{width: 60vw;}
+        100%{width: 70vw;}
+    }
+
     .back img
     {
+        animation: backimg 2s;
         width: 70vw;
         border-radius: 10px;
     }
@@ -285,8 +299,15 @@
         z-index: 4;
     }
 
+    @keyframes backimg
+    {
+        0%{width: 60vw;}
+        100%{width: 70vw;}
+    }
+
     .back img
     {
+        animation: backimg 2s;
         width: 70vw;
         border-radius: 10px;
     }
