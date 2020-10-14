@@ -9,16 +9,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="favicomatic/favicon-32x32.png" style="border-radius: 50%;" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicomatic/favicon-16x16.png" style="border-radius: 50%;" sizes="16x16" />
     <script src="JS/main.js"></script>
+    <script src="JS/menu.js"></script>
 </head>
 <body>
         <div class="menu">
             <ul>
                 <li class=menuli onclick="about()"><p>Navaneeth Venu</p></li>
                 <div class="less">
-                    <li class="menuli" onclick="home()"><p id="mone" >Home</p></li>
-                    <li class="menuli" onclick="about()"><p id="mtwo" >About</p></li>
-                    <li class="menuli" onclick="work()"><p id="mthree" >Works</p></li>
+                    <li class="menuli" onclick="home();"><p id="mone" >Home</p></li>
+                    <li class="menuli" onclick="about();"><p id="mtwo" >About</p></li>
+                    <li class="menuli" onclick="work();"><p id="mthree" >Works</p></li>
                 </div>
                 <div class="hemb" onclick="opentab()">
                     <div class="hembin"></div>
@@ -26,7 +29,7 @@
                     <div class="hembin"></div>
                 </div>
                 <div id="change">
-                    <div id="chngimg" onclick="opentab()"><i class="fa fa-window-close" aria-hidden="true" style="color:rgb(128, 15, 0)"></i></div>
+                    <div id="chngimg" onclick="opentab()"><i class="fa fa-window-close" aria-hidden="true" style="color: #a7d0f7"></i></div>
                     <div class="changeso">
                         <p onclick="home(); closetab();" >Home</p><br>
                         <p onclick="about(); closetab();" >About</p><br>
@@ -58,7 +61,7 @@
             <table style="text-align: center; margin: 0 auto; max-width: 80vw;">
                 <tr>
                     <td style="text-align: center; padding: 30px;">
-                        <progress id="her" value="90" max="100"></progress>
+                        <progress id="her" value="90" max="100" style="color: ;"></progress>
                         <p style="color:white; font-family: 'Sora', sans-serif;">90% Web Design</p>
                     </td>
                     <td style="text-align: center; padding: 30px;">
@@ -80,6 +83,10 @@
             <div class="info">
                 <p>I am a Second-Year Computer Science Engineering Undergraduate Student from Mar Baselios College of Engineering and Technology, Trivandrum.<br>I am keenly interested in designing and developing responsive static web pages. I also partake in UX/UI Prototyping (Figma)</p>
             </div>
+            <div class="chev" onclick="work()">
+                <div class="chevson"><a>My Works</a></div>
+            </div>
+            <br><br>
             <div><div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="navaneethvenu"><a class="LI-simple-link" href='https://in.linkedin.com/in/navaneethvenu?trk=profile-badge' target="_blank">Navaneeth Venu</a></div></div>
             <br><br>
         </div>
