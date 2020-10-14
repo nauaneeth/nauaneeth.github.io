@@ -6,13 +6,14 @@
     <title>Navaneeth Venu</title>
     <link rel="stylesheet" href="CSS/menu.css">
     <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/work.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="favicomatic/favicon-32x32.png" style="border-radius: 50%;" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicomatic/favicon-16x16.png" style="border-radius: 50%;" sizes="16x16" />
     <script src="JS/main.js"></script>
-    <script src="JS/menu.js"></script>
+    <script src="JS/work.js"></script>
 </head>
 <body>
         <div class="menu">
@@ -61,7 +62,7 @@
             <table style="text-align: center; margin: 0 auto; max-width: 80vw;">
                 <tr>
                     <td style="text-align: center; padding: 30px;">
-                        <progress id="her" value="90" max="100" style="color: ;"></progress>
+                        <progress id="her" value="90" max="100"></progress>
                         <p style="color:white; font-family: 'Sora', sans-serif;">90% Web Design</p>
                     </td>
                     <td style="text-align: center; padding: 30px;">
@@ -91,12 +92,27 @@
             <br><br>
         </div>
         <div id="works">
+            <div class="arrows" onclick="galem();">
+                <img class="arlef" src="images/chev.png">
+                <img class="aright" src="images/chev.png">
+            </div>
             <h1>Works</h1>
             <div class="workd">
-                <div class="back">
-                    <a href="https://alternaet.ga" target="_blank"><img src="images/work1.PNG"></a><br>
-                    <a href="https://alternaet.ga" target="_blank">View Site</a><br>
-                    <a href="https://github.com/nauaneeth/alternaet.github.io" target="_blank">View Code</a>
+                <div id="work1">
+                    <div class="back">
+                        <a href="https://alternaet.ga" target="_blank"><img src="images/work1.PNG"></a><br>
+                        <a href="https://alternaet.ga" target="_blank">View Site</a><br>
+                        <a href="https://github.com/nauaneeth/alternaet.github.io" target="_blank">View Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="workd">
+                <div id="work2">
+                    <div class="back">
+                        <a href="https://github.com/nauaneeth/colour-randomizer/" target="_blank"><img src="images/work2.PNG"></a><br>
+                        <a href="https://nauaneeth.github.io/colour-randomizer/" target="_blank">View Site</a><br>
+                        <a href="https://nauaneeth.github.io/colour-randomizer/" target="_blank">View Code</a>
+                    </div>
                 </div>
             </div>
         </div>

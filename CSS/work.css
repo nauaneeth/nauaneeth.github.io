@@ -1,0 +1,39 @@
+.arrows img
+{
+    width: 80px;
+    position: absolute;
+}
+
+#work1
+{
+    display: block;
+}
+
+#work2
+{
+    display: none;
+}
+
+.arlef
+{
+    transform: rotate(90deg);
+    top: 50vh;
+    left: 30px;
+}
+
+.arlef:hover
+{
+    transform: rotate(90deg) scale(1.05,1.05); 
+}
+
+.aright
+{
+    transform: rotate(270deg);
+    top: 50vh;
+    right: 30px;
+}
+
+.aright:hover
+{
+    transform: rotate(270deg) scale(1.05,1.05); 
+}
