@@ -4,9 +4,14 @@
     100%   {padding-top: 0%;}
 }
 
+@keyframes homebig
+{
+        0%{width: 350px;}
+        100%{width: 300px;}
+}
+
 .apple img{
-    animation: appel 3.3s;
-    animation-iteration-count: infinite;
+    animation: appel 3.3s infinite, homebig 2s;
     z-index: -1;
     width: 300px;
     margin: 0 auto;
@@ -282,9 +287,14 @@
         transform: translate(-50%,0%);
     }
 
+    @keyframes homebig
+    {
+            0%{width: 450px;}
+            100%{width: 400px;}
+    }
+
     .apple img{
-        animation: appel 3.3s;
-        animation-iteration-count: 20;
+        animation: appel 3.3s infinite, homebig 2s;
         z-index: -1;
         width: 400px;
         margin: 0 auto;
