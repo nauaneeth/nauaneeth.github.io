@@ -19,9 +19,9 @@
             <ul>
                 <li class=menuli onclick="about()"><p>Navaneeth Venu</p></li>
                 <div class="less">
-                    <li class="menuli" onclick="home();"><p id="mone" >Home</p></li>
-                    <li class="menuli" onclick="about();"><p id="mtwo" >About</p></li>
-                    <li class="menuli" onclick="work();"><p id="mthree" >Works</p></li>
+                    <li class="menuli" onclick="home(); scrollme();"><p id="mone" >Home</p></li>
+                    <li class="menuli" onclick="about() scrollme();"><p id="mtwo" >About</p></li>
+                    <li class="menuli" onclick="work(); scrollme();"><p id="mthree" >Works</p></li>
                 </div>
                 <div class="hemb" onclick="opentab()">
                     <div class="hembin"></div>
@@ -31,9 +31,9 @@
                 <div id="change">
                     <div id="chngimg" onclick="opentab()"><i class="fa fa-window-close" aria-hidden="true" style="color: #a7d0f7"></i></div>
                     <div class="changeso">
-                        <p onclick="home(); closetab();" >Home</p><br>
-                        <p onclick="about(); closetab();" >About</p><br>
-                        <p onclick="work(); closetab();" >Works</p><br>
+                        <p onclick="home(); closetab(); scrollme();" >Home</p><br>
+                        <p onclick="about(); closetab(); scrollme();" >About</p><br>
+                        <p onclick="work(); closetab(); scrollme();" >Works</p><br>
                     </div>
                 </div>
             </ul>
@@ -48,7 +48,7 @@
                 <br>
                 <p class="iv">as little design as possible.</p>
             </div>
-            <div class="chev" onclick="about()">
+            <div class="chev" onclick="about(); scrollme();">
                 <div class="chevson"><a>About Me</a></div>
             </div>
         </div>
@@ -83,7 +83,7 @@
             <div class="info">
                 <p>I am a Second-Year Computer Science Engineering Undergraduate Student from Mar Baselios College of Engineering and Technology, Trivandrum.<br>I am keenly interested in designing and developing responsive static web pages. I also partake in UX/UI Prototyping (Figma)</p>
             </div>
-            <div class="chev" onclick="work()">
+            <div class="chev" onclick="work(); scrollme();">
                 <div class="chevson"><a>My Works</a></div>
             </div>
             <br><br>

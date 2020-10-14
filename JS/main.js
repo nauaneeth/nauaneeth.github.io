@@ -52,3 +52,8 @@ function work()
     y.style.display="none";
     z.style.display="block";
 } 
+
+function scrollme()
+{
+  window.scrollTo(0,0); 
+}
