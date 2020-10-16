@@ -4,13 +4,7 @@
     position: absolute;
 }
 
-#work1
-{
-    display: block;
-}
-
-#work2
-{
+.work{
     display: none;
 }
 
