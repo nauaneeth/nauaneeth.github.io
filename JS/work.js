@@ -12,7 +12,7 @@ function galem()
         x[i].style.display="none";
       }
     }
-    if(parseInt(y)==2)
+    if(parseInt(y)==n-1)
     {
       s.innerHTML=0;
     }
@@ -25,10 +25,12 @@ function galem()
 function startwork()
 {
   var x = document.getElementsByClassName("work");
+  var s=document.getElementById("store");
   x[0].style.display="block";
   var i,n=3;
   for(i=1;i<n;++i)
     {
         x[i].style.display="none";
     }
+  s.innerHTML=1;
 }
