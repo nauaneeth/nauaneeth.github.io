@@ -1,15 +1,28 @@
 function galem()
 {
-    var x = document.getElementById("work1");
-    var y = document.getElementById("work2");
-    if (x.style.display === "none")
+    var x = document.getElementsByClassName("work");
+    var s=document.getElementById("store");
+    y=s.innerHTML
+    var i,n=3;
+    x[y].style.display="block";
+    for(i=0;i<n;++i)
     {
-      x.style.display = "block";
-      y.style.display = "none";
+      if(i!=y)
+      {
+        x[i].style.display="none";
+      }
+    }
+    if(parseInt(y)==2)
+    {
+      s.innerHTML=0;
     }
     else
     {
-      x.style.display = "none";
-      y.style.display = "block";
+      s.innerHTML=parseInt(y)+1;
     }
+}
+
+function startwork()
+{
+  document.getElementsByClassName("work")[0].style.display="block";
 }
