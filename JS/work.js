@@ -24,5 +24,11 @@ function galem()
 
 function startwork()
 {
-  document.getElementsByClassName("work")[0].style.display="block";
+  var x = document.getElementsByClassName("work");
+  x[0].style.display="block";
+  var i,n=3;
+  for(i=1;i<n;++i)
+    {
+        x[i].style.display="none";
+    }
 }
