@@ -26,23 +26,27 @@
         </div>
         <div class="cursor2">
             <img src="images/ball2.svg" width="40px">
-            <script type="text/javascript">
-                var cursor = document.getElementsByClassName('cursor2')[0];
-                var cursorf = document.getElementsByClassName('ball')[0];
 
-                document.addEventListener('mousemove', function (e) {
-                    var x = e.clientX;
-                    var y = e.clientY;
-                    cursor.style.left = x + "px";
-                    cursor.style.top = y + "px";
-                    cursorf.style.left = x + "px";
-                    cursorf.style.top = y + "px";
-                });
-
-
-            </script>
         </div>
+
     </div>
+
+    <script type="text/javascript">
+        var cursor = document.getElementsByClassName('cursor2')[0];
+        var cursorf = document.getElementsByClassName('ball')[0];
+
+        document.addEventListener('mousemove', function (e) {
+            var x = e.clientX;
+            var y = e.clientY;
+            cursor.style.left = x + "px";
+            cursor.style.top = y + "px";
+            cursorf.style.left = x + "px";
+            cursorf.style.top = y + "px";
+        });
+
+
+    </script>
+
     <div class="menu">
         <ul>
             <li class=menuli onclick="about()">
@@ -97,12 +101,13 @@
 
     </div>
     <div id="about">
+
         <div class="picc">
-            <div class="pic"><img src="images/dp.jpg"></div>
-            <p class="i">Navaneeth Venu</p>
-            <p class="ii">Graphic Designer</p>
+            <div class="pic"><img src="images/balltext.svg"></div>
+            <!--<p class="i">Navaneeth Venu</p>
+            <p class="ii">Graphic Designer</p>-->
         </div>
-        <table style="text-align: center; margin: 0 auto; max-width: 80vw;">
+        <!--<table style="text-align: center; margin: 0 auto; max-width: 80vw;">
             <tr>
                 <td style="text-align: center; padding: 30px;">
                     <progress id="her" value="90" max="100"></progress>
@@ -123,11 +128,31 @@
                     <p style="color:white; font-family: 'Poppins', sans-serif;">20% Javascript</p>
                 </td>
             </tr>
-        </table>
+        </table>-->
         <div class="info">
-            <p>I am a Second-Year Computer Science Engineering Undergraduate Student from Mar Baselios College of
-                Engineering and Technology, Trivandrum.<br>I am keenly interested in designing and developing responsive
-                static web pages. I also partake in UX/UI Prototyping (Figma)</p>
+
+            <p class="mytext">I am a <span class="highlight">Second-Year Computer Science Engineering
+                    Undergraduate </span> Student from Mar Baselios
+                College of
+                Engineering and Technology, Trivandrum.<br>I am keenly interested in all things design. <br><br> I
+                design trending
+                yet <span class="highlight">memorable
+                    user-oriented
+                    experiences</span> through
+                well thought out
+                <span class="highlight">User Interfaces</span>. <br><br> I’m also well
+                versed in creating
+                content tailored to
+                <span class="highlight">digitally empower
+                    your brand</span> through
+                Social Media. <br><br> I’m focused on implementing
+                <span class="highlight">ideas and concepts</span>,
+                rather than plain designs,
+                so as to apply to
+                <span class="highlight">real world applications</span>,
+                all the while
+                breaking <span class="highlight">out of the box</span>.
+            </p>
         </div>
         <div class="chev" onclick="work(); scrollme(); startwork();">
             <div class="chevson"><a>My Works</a></div>
