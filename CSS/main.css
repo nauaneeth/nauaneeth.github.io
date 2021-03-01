@@ -6,16 +6,26 @@
 
 @keyframes homebig
 {
-        0%{width: 350px;}
-        100%{width: 300px;}
+        0%{width: 750px;}
+        100%{width: 700px;}
 }
+
+.overcont
+{
+    overflow-x: hidden;
+    position: relative;
+    width: 100vw;
+    height: fit-content;
+}
+
 
 .apple img{
     animation: appel 3.3s infinite, homebig 2s;
     z-index: -1;
-    width: 300px;
+    width: 700px;
     margin: 0 auto;
     text-align: center;
+    margin-top: -100px;
     
 }
 
@@ -29,7 +39,7 @@
 }
 
 .spanhold{
-    padding-top: 490px;
+    padding-top: 420px;
     text-align: center;
     float: middle;
     z-index: 4;
@@ -42,6 +52,7 @@
     font-size: 43px;
     font-weight: bolder;
     padding-top: 1px;   
+    line-height: 1.1;
 }
 
 .iv{
@@ -49,6 +60,16 @@
     color: white;
     display: inline;
     font-size: 33px;
+    padding-top: 0px;  
+    font-weight: 400;
+    line-height: 0.9;
+}
+
+.v{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: inline;
+    font-size: 20px;
     padding-top: 0px;  
     font-weight: 400;
 }
@@ -61,19 +82,18 @@
 
 .chevson
 {
-    width:fit-content;
+    width:30px;
     border-radius: 10px;
     margin: 0 auto;
     margin-top: -10px;
     padding: 5px; color: white;
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
-    background-color: tomato;
 }
 
-.chevson a:hover
+.chevson:hover
 {
-    font-size: 110%;
+    transform: scale(1.15,1.15);
 }
 
 #about{
@@ -157,6 +177,47 @@
 #home{
     animation: homme 1.2s;
     
+}
+
+.ball
+{
+    position: absolute;
+    z-index: -2;
+    top: 0px;
+    transition-duration: 4500ms;
+    transform: translate(-50%,-50%);
+    transition-timing-function: ease-out;
+}
+
+.ball2
+{
+    animation: mov2 11s infinite;
+    position: absolute;
+    z-index: -2;
+    top: 0px;
+    
+}
+
+.cursor2
+{
+    position: absolute;
+    z-index: 1;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+}
+
+@keyframes mov
+{
+    0%{top:0px;left:0px;}
+    80%{top:80vh;left:80vw;transform: scale(1.5,1.5);}
+    100%{top:100vh;left:0vw;}
+}
+
+@keyframes mov2
+{
+    0%{top:0px;left:0px;}
+    80%{top:80vh;left:80vw;transform: scale(1.5,1.5);}
+    100%{top:100vh;left:0vw;}
 }
 
 @keyframes workk
@@ -246,6 +307,39 @@
         width: 80px;
     }
 
+    .apple img{
+        animation: appel 3.3s infinite, homebig 2s;
+        z-index: -1;
+        width: 500px;
+        margin: 0 auto;
+        text-align: center;
+        
+    }
+
+    @keyframes homebig
+    {
+            0%{width: 550px;}
+            100%{width: 500px;}
+    }
+
+    .spanhold{
+        padding-top: 320px;
+        text-align: center;
+        float: middle;
+        z-index: 4;
+    }
+
+    .apple{
+        text-align: center;
+        padding-top: 120px;
+        position: absolute;
+        left: 50vw;
+        z-index: -1;
+        top:-100px;
+        transform: translate(-50%,0%);
+    }
+
+
     .info{
         margin: 0 auto;
         width:80vw;
@@ -272,6 +366,12 @@
         width: 80px;
     }
 
+    @keyframes homebig
+    {
+            0%{width: 750px;}
+            100%{width: 700px;}
+    }
+
     .info{
         margin: 0 auto;
         width:80vw;
@@ -280,23 +380,17 @@
 
     .apple{
         text-align: center;
-        padding-top: 220px;
+        padding-top: 180px;
         position: absolute;
         left: 50vw;
         z-index: -1;
         transform: translate(-50%,0%);
     }
 
-    @keyframes homebig
-    {
-            0%{width: 450px;}
-            100%{width: 400px;}
-    }
-
     .apple img{
         animation: appel 3.3s infinite, homebig 2s;
         z-index: -1;
-        width: 400px;
+        width: 700px;
         margin: 0 auto;
         text-align: center;
         
@@ -321,5 +415,12 @@
         width: 70vw;
         border-radius: 10px;
     }
+
+    @keyframes appel{
+    0%   {padding-top: 0%;}
+    60% {padding-top: 10px;}
+    100%   {padding-top: 0%;}
+}
+
 }
 

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/menu.css">
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/work.css">
+    <link rel="stylesheet" href="CSS/type.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,6 +16,7 @@
     <link rel="icon" type="image/png" href="favicomatic/favicon-16x16.png" style="border-radius: 50%;" sizes="16x16" />
     <script src="JS/main.js"></script>
     <script src="JS/work.js"></script>
+
 </head>
 
 <body>
@@ -53,16 +55,42 @@
     <div id="store" style="display: none;">1</div>
     <div id="blur"></div>
     <div id="home">
-        <div class="apple">
-            <img src="images">
-        </div>
-        <div class="spanhold">
-            <p class="iii">Good Design is</p>
+        <div class="overcont">
+            <div class="apple">
+                <img src="images/Asset 2@72x-8.png">
+            </div>
+            <div class=" spanhold">
+                <!--<div class="v"><span style="font-weight:bold ;">Navaneeth Venu</span></div>
+                        <br>-->
+                <p class="iv">What I am</p>
+                <br>
+                <p class="iii">Designer</p>
+            </div>
+
             <br>
-            <p class="iv">as little design as possible.</p>
+            <div class="chev" onclick="about(); scrollme();">
+                <div class="chevson"><img src="images/chev.png" style="width: 30px;"></div>
+            </div>
         </div>
-        <div class="chev" onclick="about(); scrollme();">
-            <div class="chevson"><a>About Me</a></div>
+        <div class="ball">
+            <img src="images/ball.svg" width="100px">
+        </div>
+        <div class="cursor2">
+            <img src="images/ball2.svg" width="40px">
+            <script type="text/javascript">
+                var cursor = document.getElementsByClassName('cursor2')[0];
+                var cursorf = document.getElementsByClassName('ball')[0];
+                document.addEventListener('mousemove', function (e) {
+                    var x = e.clientX;
+                    var y = e.clientY;
+                    cursor.style.left = x + "px";
+                    cursor.style.top = y + "px";
+                    cursorf.style.left = x + "px";
+                    cursorf.style.top = y + "px";
+                });
+
+
+            </script>
         </div>
     </div>
     <div id="about">
@@ -149,6 +177,9 @@
         </div>
     </div>
     </div>
+
+    <script src="JS/type.js"></script>
+
 </body>
 
 </html>
