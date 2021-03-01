@@ -20,6 +20,29 @@
 </head>
 
 <body>
+    <div class="cursor">
+        <div class="ball">
+            <img src="images/ball.svg" width="100px">
+        </div>
+        <div class="cursor2">
+            <img src="images/ball2.svg" width="40px">
+            <script type="text/javascript">
+                var cursor = document.getElementsByClassName('cursor2')[0];
+                var cursorf = document.getElementsByClassName('ball')[0];
+
+                document.addEventListener('mousemove', function (e) {
+                    var x = e.clientX;
+                    var y = e.clientY;
+                    cursor.style.left = x + "px";
+                    cursor.style.top = y + "px";
+                    cursorf.style.left = x + "px";
+                    cursorf.style.top = y + "px";
+                });
+
+
+            </script>
+        </div>
+    </div>
     <div class="menu">
         <ul>
             <li class=menuli onclick="about()">
@@ -66,32 +89,12 @@
                 <br>
                 <p class="iii">Designer</p>
             </div>
-
             <br>
             <div class="chev" onclick="about(); scrollme();">
                 <div class="chevson"><img src="images/chev.png" style="width: 30px;"></div>
             </div>
         </div>
-        <div class="ball">
-            <img src="images/ball.svg" width="100px">
-        </div>
-        <div class="cursor2">
-            <img src="images/ball2.svg" width="40px">
-            <script type="text/javascript">
-                var cursor = document.getElementsByClassName('cursor2')[0];
-                var cursorf = document.getElementsByClassName('ball')[0];
-                document.addEventListener('mousemove', function (e) {
-                    var x = e.clientX;
-                    var y = e.clientY;
-                    cursor.style.left = x + "px";
-                    cursor.style.top = y + "px";
-                    cursorf.style.left = x + "px";
-                    cursorf.style.top = y + "px";
-                });
 
-
-            </script>
-        </div>
     </div>
     <div id="about">
         <div class="picc">

@@ -202,7 +202,9 @@
 {
     position: absolute;
     z-index: 1;
+    transition-duration: 1500ms;
     transform: translate(-50%,-50%);
+    transition-timing-function: ease-out;
     pointer-events: none;
 }
 
