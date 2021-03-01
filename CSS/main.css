@@ -4,6 +4,13 @@
     100%   {padding-top: 0%;}
 }
 
+@keyframes cursoranim
+{
+  0%   {padding-top: 20px; }
+    60% {padding-top: 0%;}
+    100%   {padding-top: 20px;}  
+}
+
 @keyframes homebig
 {
         0%{width: 750px;}
@@ -92,6 +99,7 @@
     padding-top: 0px;  
     font-weight: 400;
     line-height: 0.9;
+    background-color: #171628;
 }
 
 .v{
@@ -111,11 +119,14 @@
 
 .chevson
 {
+    padding: 20px;
+    padding-top: 0px;
     width:30px;
     border-radius: 10px;
     margin: 0 auto;
-    margin-top: -10px;
-    padding: 5px; color: white;
+    margin-top: 10px;
+    
+    color: white;
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
 }
@@ -139,7 +150,8 @@
 .info{
     margin: 0 auto;
     width: 500px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
+    position: relative;
 }
 
 .info p
@@ -169,20 +181,33 @@
     text-align: center;
     padding: 10px;
     padding-top: 30px;
+    position: relative;
+    z-index: 10;
 }
 
-.pic img{
+.picimg:hover
+{
+    background-color: teal;
+}
+
+.picimg{
+    
     margin-top: 30px;
     width: 250px;
     border-radius: 50%;
     text-align: center;
-    box-shadow: 0 0 10px 20px #00000005;
+
 }
 
 .picc{
     padding-top: 80px;
     margin: 0 auto;
     padding: 0px;
+}
+
+.picimg:hover
+{
+    background-color: rgb(139, 94, 86);
 }
 
 .i{
@@ -210,6 +235,7 @@
 
 .ball
 {
+    animation: cursoranim 3.3s infinite;
     position: absolute;
     z-index: -2;
     top: 0px;

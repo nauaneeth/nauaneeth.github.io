@@ -1,0 +1,9 @@
+.itm-hidden
+{
+    display: none;
+}
+
+.itm-visible
+{
+    display: block;
+}

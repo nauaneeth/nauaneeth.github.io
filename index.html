@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/work.css">
     <link rel="stylesheet" href="CSS/type.css">
+    <link rel="stylesheet" href="CSS/carousel.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,6 +17,7 @@
     <link rel="icon" type="image/png" href="favicomatic/favicon-16x16.png" style="border-radius: 50%;" sizes="16x16" />
     <script src="JS/main.js"></script>
     <script src="JS/work.js"></script>
+    <script src="JS/carousel.js"></script>
 
 </head>
 
@@ -102,69 +104,63 @@
     </div>
     <div id="about">
 
-        <div class="picc">
-            <div class="pic"><img src="images/balltext.svg"></div>
-            <!--<p class="i">Navaneeth Venu</p>
-            <p class="ii">Graphic Designer</p>-->
-        </div>
-        <!--<table style="text-align: center; margin: 0 auto; max-width: 80vw;">
-            <tr>
-                <td style="text-align: center; padding: 30px;">
-                    <progress id="her" value="90" max="100"></progress>
-                    <p style="color:white; font-family: 'Poppins', sans-serif;">90% Web Design</p>
-                </td>
-                <td style="text-align: center; padding: 30px;">
-                    <progress id="her" value="60" max="100"></progress>
-                    <p style="color:white; font-family: 'Poppins', sans-serif;">60% HTML 5</p>
-                </td>
-            </tr>
-            <tr>
-                <td style="text-align: center; padding: 30px;">
-                    <progress id="her" value="70" max="100"></progress>
-                    <p style="color:white; font-family: 'Poppins', sans-serif;">70% CSS</p>
-                </td>
-                <td style="text-align: center; padding: 30px;">
-                    <progress id="her" value="20" max="100"></progress>
-                    <p style="color:white; font-family: 'Poppins', sans-serif;">20% Javascript</p>
-                </td>
-            </tr>
-        </table>-->
-        <div class="info">
 
-            <p class="mytext">I am a <span class="highlight">Second-Year Computer Science Engineering
-                    Undergraduate </span> Student from Mar Baselios
-                College of
-                Engineering and Technology, Trivandrum.<br>I am keenly interested in all things design. <br><br> I
-                design trending
-                yet <span class="highlight">memorable
-                    user-oriented
-                    experiences</span> through
-                well thought out
-                <span class="highlight">User Interfaces</span>. <br><br> I’m also well
-                versed in creating
-                content tailored to
-                <span class="highlight">digitally empower
-                    your brand</span> through
-                Social Media. <br><br> I’m focused on implementing
-                <span class="highlight">ideas and concepts</span>,
-                rather than plain designs,
-                so as to apply to
-                <span class="highlight">real world applications</span>,
-                all the while
-                breaking <span class="highlight">out of the box</span>.
-            </p>
-        </div>
-        <div class="chev" onclick="work(); scrollme(); startwork();">
-            <div class="chevson"><a>My Works</a></div>
-        </div>
-        <br><br>
-        <div>
-            <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical"
-                data-theme="dark" data-vanity="navaneethvenu"><a class="LI-simple-link"
-                    href='https://in.linkedin.com/in/navaneethvenu?trk=profile-badge' target="_blank">Navaneeth Venu</a>
+        <div class="cardab">\
+            <div class="picc">
+                <div class="pic"><img src="images/balltext.svg" class="picimg"></div>
+                <!--<p class="i">Navaneeth Venu</p>
+                        <p class="ii">Graphic Designer</p>-->
+            </div>
+
+
+            <br>
+
+            <div class="info">
+
+                <div class="txtcarousel-itm itm-visible">
+                    <p class="mytext">I am a <span class="highlight">Second-Year Computer Science Engineering
+                            Undergraduate </span> Student from Mar Baselios
+                        College of
+                        Engineering and Technology, Trivandrum.<br>I am keenly interested in all things design.
+                    </p>
+                </div>
+
+                <div class="txtcarousel-itm itm-hidden">
+                    <p class="mytext">I design trending
+                        yet <span class="highlight">memorable
+                            user-oriented</span>
+                        experiences through
+                        well thought out
+                        <span class="highlight">User Interfaces</span>.</p>
+                </div>
+
+                <div class="txtcarousel-itm itm-hidden">
+                    <p class="mytext">I’m also well
+                        versed in creating
+                        content tailored to
+                        <span class="highlight">digitally empower
+                            your brand</span> through
+                        Social Media.</p>
+                </div>
+
+                <div class="txtcarousel-itm itm-hidden">
+                    <p class="mytext">I’m focused on implementing
+                        <span class="highlight">ideas and concepts</span>,
+                        rather than plain designs,
+                        so as to apply to
+                        <span class="highlight">real world applications</span>,
+                        all the while
+                        breaking <span class="highlight">out of the box</span>.</p>
+                </div>
+
+            </div>
+            <div class="chev" onclick="myFunctioon()">
+                <div class="chevson"><img src="images/rightchev.svg" alt=""></div>
             </div>
         </div>
-        <br><br>
+
+
+
     </div>
     <div id="works">
         <div class="arrows" onclick="galem();">
