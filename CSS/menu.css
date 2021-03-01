@@ -9,7 +9,7 @@ body
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
-    background: linear-gradient(0.25turn, #7eb2e2 , #579ddf);
+    background: #5449e8
 }
 
 .menu
@@ -33,7 +33,7 @@ body
 .menuli p
 {
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     color: #dce7f1;
     cursor: pointer;
@@ -153,7 +153,7 @@ body
 
     #change p{
         text-decoration: none;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Poppins', sans-serif;
         cursor: pointer;
         color: #a7d0f7;
     }
