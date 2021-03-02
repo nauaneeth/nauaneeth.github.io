@@ -1,5 +1,6 @@
 .rotim img
 {
+    animation: cursoranim 5.3s infinite;
     margin-top: 50px;
     border-radius: 50%;
     
@@ -35,7 +36,7 @@
     margin-top: -620px;
 }
 
-.about2
+.about
 {
     overflow-x: hidden;
 }
