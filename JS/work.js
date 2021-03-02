@@ -4,7 +4,7 @@ function galem() {
   var x = document.getElementsByClassName("work");
   var s = document.getElementById("store");
   y = s.innerHTML
-  var i, n = 3;
+  var i, n = 5;
   x[y].style.display = "block";
   for (i = 0; i < n; ++i) {
     if (i != y) {
@@ -23,7 +23,7 @@ function startwork() {
   var x = document.getElementsByClassName("work");
   var s = document.getElementById("store");
   x[0].style.display = "block";
-  var i, n = 3;
+  var i, n = 5;
   for (i = 1; i < n; ++i) {
     x[i].style.display = "none";
   }
