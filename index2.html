@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navaneeth Venu</title>
+    <link rel="stylesheet" href="CSS/menu.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/work.css">
+    <link rel="stylesheet" href="CSS/type.css">
+    <link rel="stylesheet" href="CSS/carousel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="favicomatic/favicon-32x32.png" style="border-radius: 50%;" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicomatic/favicon-16x16.png" style="border-radius: 50%;" sizes="16x16" />
+    <script src="JS/main.js"></script>
+    <script src="JS/work.js"></script>
+    <script src="JS/carousel.js"></script>
+
+</head>
+
+<body>
+    <div class="cursor">
+        <div class="ball">
+            <img src="images/ball.svg" width="100px">
+        </div>
+        <div class="cursor2">
+            <img src="images/ball2.svg" width="40px">
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        var cursor = document.getElementsByClassName('cursor2')[0];
+        var cursorf = document.getElementsByClassName('ball')[0];
+
+        document.addEventListener('mousemove', function (e) {
+            var x = e.clientX;
+            var y = e.clientY;
+            cursor.style.left = x + "px";
+            cursor.style.top = y + "px";
+            cursorf.style.left = x + "px";
+            cursorf.style.top = y + "px";
+        });
+
+
+    </script>
+
+    <div class="menu">
+        <ul>
+            <li class=menuli onclick="about()">
+                <p>Navaneeth Venu</p>
+            </li>
+            <div class="less">
+                <li class="menuli" onclick="home(); scrollme();">
+                    <p id="mone">Home</p>
+                </li>
+                <li class="menuli" onclick="about(); scrollme();">
+                    <p id="mtwo">About</p>
+                </li>
+                <li class="menuli" onclick="work(); scrollme(); startwork();">
+                    <p id="mthree">Works</p>
+                </li>
+            </div>
+            <div class="hemb" onclick="opentab()">
+                <div class="hembin"></div>
+                <div class="hembin"></div>
+                <div class="hembin"></div>
+            </div>
+            <div id="change">
+                <div id="chngimg" onclick="opentab()"><i class="fa fa-window-close" aria-hidden="true"
+                        style="color: #a7d0f7"></i></div>
+                <div class="changeso">
+                    <p onclick="home(); closetab(); scrollme();">Home</p><br>
+                    <p onclick="about(); closetab(); scrollme();">About</p><br>
+                    <p onclick="work(); closetab(); scrollme(); startwork();">Works</p><br>
+                </div>
+            </div>
+        </ul>
+    </div>
+    <div id="store" style="display: none;">1</div>
+    <div id="blur"></div>
+
+    <div id="about2">
+
+
+        <!-- <div class="cardab">\
+            <div class="picc">
+                <div class="pic"><img src="images/balltext.svg" class="picimg"></div>
+            </div>
+
+
+            <br>
+
+            <div class="info"></div>
+        </div> -->
+        <div class="rot">
+            <!-- <img class="chevvie" src="images/rightchev.svg" alt=""> -->
+            <div class="rotim">
+                <img class="rotimmg" src="images/letswork.svg" style="width:300px">
+                <div class="rottext">
+                    <img src="images/rotext.svg">
+                </div>
+            </div>
+
+        </div>
+
+
+        <script src="JS/type.js"></script>
+
+</body>
+
+</html>
+
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>

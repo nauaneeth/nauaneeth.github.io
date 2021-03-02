@@ -187,7 +187,7 @@
 
 .picimg:hover
 {
-    background-color: teal;
+    background-color: rgba(255, 255, 255, 0.082);
 }
 
 .picimg{
@@ -203,11 +203,6 @@
     padding-top: 80px;
     margin: 0 auto;
     padding: 0px;
-}
-
-.picimg:hover
-{
-    background-color: rgb(139, 94, 86);
 }
 
 .i{
