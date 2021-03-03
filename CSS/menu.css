@@ -2,7 +2,13 @@ html, body
 {
     margin: 0;
     padding: 0;
+<<<<<<< Updated upstream
     cursor: none;
+=======
+    height: 100%;
+    transition: background-color 1s ease;
+    
+>>>>>>> Stashed changes
 }
   
 body

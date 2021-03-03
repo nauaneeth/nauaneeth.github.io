@@ -230,7 +230,7 @@
 #works
 {
     animation: workk 1.2s;
-    display: none;
+    display: block;
     margin: 0 auto;
     padding: 30px;
     padding-top: 100px;

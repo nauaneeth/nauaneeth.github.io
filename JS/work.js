@@ -1,5 +1,9 @@
 var ctr = 0;
 
+window.onload = function () {
+  startwork();
+};
+
 function galem() {
   var x = document.getElementsByClassName("work");
   var s = document.getElementById("store");

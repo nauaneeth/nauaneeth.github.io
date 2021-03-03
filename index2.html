@@ -9,11 +9,7 @@
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/work.css">
     <link rel="stylesheet" href="CSS/type.css">
-<<<<<<< Updated upstream
-=======
     <link rel="stylesheet" href="CSS/carousel.css">
-    <link rel="stylesheet" href="CSS/colourchange.css">
->>>>>>> Stashed changes
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,28 +17,54 @@
     <link rel="icon" type="image/png" href="favicomatic/favicon-16x16.png" style="border-radius: 50%;" sizes="16x16" />
     <script src="JS/main.js"></script>
     <script src="JS/work.js"></script>
-<<<<<<< Updated upstream
-=======
     <script src="JS/carousel.js"></script>
-    <script src="JS/colour.js"></script>
->>>>>>> Stashed changes
 
 </head>
 
 <body>
+
+
+    <!--Start Cursor-->
+    <div class="cursor">
+        <div class="ball">
+            <img src="images/ball.svg" width="100px">
+        </div>
+        <div class="cursor2">
+            <img src="images/ball2.svg" width="40px">
+
+        </div>
+        <script type="text/javascript">
+            var cursor = document.getElementsByClassName('cursor2')[0];
+            var cursorf = document.getElementsByClassName('ball')[0];
+
+            document.addEventListener('mousemove', function (e) {
+                var x = e.pageX;
+                var y = e.pageY;
+                cursor.style.left = x + "px";
+                cursor.style.top = y + "px";
+                cursorf.style.left = x + "px";
+                cursorf.style.top = y + "px";
+            });
+        </script>
+    </div>
+
+    <!--End Cursor-->
+
+    <!--Start Header-->
+
     <div class="menu">
         <ul>
-            <li class=menuli onclick="about()">
+            <li class=menuli onclick="">
                 <p>Navaneeth Venu</p>
             </li>
             <div class="less">
-                <li class="menuli" onclick="home(); scrollme();">
+                <li class="menuli" onclick="scrollme();">
                     <p id="mone">Home</p>
                 </li>
-                <li class="menuli" onclick="about(); scrollme();">
+                <li class="menuli" onclick="scrollme();">
                     <p id="mtwo">About</p>
                 </li>
-                <li class="menuli" onclick="work(); scrollme(); startwork();">
+                <li class="menuli" onclick="scrollme(); startwork();">
                     <p id="mthree">Works</p>
                 </li>
             </div>
@@ -55,110 +77,90 @@
                 <div id="chngimg" onclick="opentab()"><i class="fa fa-window-close" aria-hidden="true"
                         style="color: #a7d0f7"></i></div>
                 <div class="changeso">
-                    <p onclick="home(); closetab(); scrollme();">Home</p><br>
-                    <p onclick="about(); closetab(); scrollme();">About</p><br>
-                    <p onclick="work(); closetab(); scrollme(); startwork();">Works</p><br>
+                    <p onclick="closetab(); scrollme();">Home</p><br>
+                    <p onclick="closetab(); scrollme();">About</p><br>
+                    <p onclick="closetab(); scrollme(); startwork();">Works</p><br>
                 </div>
             </div>
         </ul>
     </div>
     <div id="store" style="display: none;">1</div>
     <div id="blur"></div>
+
+    <!--End Menu-->
+
+    <!--Start Hero-->
+
     <div id="home">
         <div class="overcont">
             <div class="apple">
                 <img src="images/Asset 2@72x-8.png">
             </div>
             <div class=" spanhold">
-                <!--<div class="v"><span style="font-weight:bold ;">Navaneeth Venu</span></div>
-                        <br>-->
                 <p class="iv">What I am</p>
                 <br>
                 <p class="iii">Designer</p>
             </div>
-
             <br>
             <div class="chev" onclick="about(); scrollme();">
                 <div class="chevson"><img src="images/chev.png" style="width: 30px;"></div>
             </div>
         </div>
-        <div class="ball">
-            <img src="images/ball.svg" width="100px">
-        </div>
-        <div class="cursor2">
-            <img src="images/ball2.svg" width="40px">
-            <script type="text/javascript">
-                var cursor = document.getElementsByClassName('cursor2')[0];
-                var cursorf = document.getElementsByClassName('ball')[0];
-                document.addEventListener('mousemove', function (e) {
-                    var x = e.clientX;
-                    var y = e.clientY;
-                    cursor.style.left = x + "px";
-                    cursor.style.top = y + "px";
-                    cursorf.style.left = x + "px";
-                    cursorf.style.top = y + "px";
-                });
 
-
-            </script>
-        </div>
     </div>
-    <div id="about">
-        <div class="picc">
-            <div class="pic"><img src="images/dp.jpg"></div>
-            <p class="i">Navaneeth Venu</p>
-            <p class="ii">Graphic Designer</p>
-        </div>
-        <table style="text-align: center; margin: 0 auto; max-width: 80vw;">
-            <tr>
-                <td style="text-align: center; padding: 30px;">
-                    <progress id="her" value="90" max="100"></progress>
-                    <p style="color:white; font-family: 'Poppins', sans-serif;">90% Web Design</p>
-                </td>
-                <td style="text-align: center; padding: 30px;">
-                    <progress id="her" value="60" max="100"></progress>
-                    <p style="color:white; font-family: 'Poppins', sans-serif;">60% HTML 5</p>
-                </td>
-            </tr>
-            <tr>
-                <td style="text-align: center; padding: 30px;">
-                    <progress id="her" value="70" max="100"></progress>
-                    <p style="color:white; font-family: 'Poppins', sans-serif;">70% CSS</p>
-                </td>
-                <td style="text-align: center; padding: 30px;">
-                    <progress id="her" value="20" max="100"></progress>
-                    <p style="color:white; font-family: 'Poppins', sans-serif;">20% Javascript</p>
-                </td>
-            </tr>
-        </table>
-        <div class="info">
-            <p>I am a Second-Year Computer Science Engineering Undergraduate Student from Mar Baselios College of
-                Engineering and Technology, Trivandrum.<br>I am keenly interested in designing and developing responsive
-                static web pages. I also partake in UX/UI Prototyping (Figma)</p>
-        </div>
-        <div class="chev" onclick="work(); scrollme(); startwork();">
-            <div class="chevson"><a>My Works</a></div>
-        </div>
-        <br><br>
-        <div>
-            <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical"
-                data-theme="dark" data-vanity="navaneethvenu"><a class="LI-simple-link"
-                    href='https://in.linkedin.com/in/navaneethvenu?trk=profile-badge' target="_blank">Navaneeth Venu</a>
+
+    <!--End Hero-->
+
+    <!--Start About-->
+
+    <div class="about" style="padding-top: 20px; overflow: hidden;">
+        <div class=" rot">
+            <div class="rotim">
+                <img class="rotimmg" src="images/balltext.svg" style="width:300px">
+                <div class="rottext">
+                    <img src="images/rotext.svg">
+                </div>
             </div>
+
         </div>
-        <br><br>
     </div>
+
     <div id="works">
         <div class="arrows" onclick="galem();">
             <img class="arlef" src="images/chev.png">
             <img class="aright" src="images/chev.png">
         </div>
         <h1>Works</h1>
+
+        <div class="workd">
+            <div class="work">
+                <div class="back">
+                    <a href="https://www.behance.net/gallery/114429409/Venemous-Gaming-Twine-Logo-Design-Challenge-4-2021"
+                        target="_blank"><img src="images/work5.PNG"></a><br>
+                    <a style="color: whitesmoke; font-weight: bold;">Venemous Gaming | Logo Design</a><br>
+                    <a href="https://www.behance.net/gallery/114429409/Venemous-Gaming-Twine-Logo-Design-Challenge-4-2021"
+                        target="_blank">View Project</a><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="workd">
+            <div class="work">
+                <div class="back">
+                    <a href="https://www.behance.net/gallery/114374589/Thea-Rosa-Twine-Logo-Design-Challenge-1-2021"
+                        target="_blank"><img src="images/work4.PNG"></a><br>
+                    <a style="color: whitesmoke; font-weight: bold;">Thea Rosa | Logo Design</a><br>
+                    <a href="https://www.behance.net/gallery/114374589/Thea-Rosa-Twine-Logo-Design-Challenge-1-2021"
+                        target="_blank">View Project</a><br>
+                </div>
+            </div>
+        </div>
+
         <div class="workd">
             <div class="work">
                 <div class="back">
                     <a href="https://alternaet.ga/guess" target="_blank"><img src="images/work1.PNG"></a><br>
-                    <a style="color: whitesmoke;">Music Landing Page</a><br>
+                    <a style="color: whitesmoke; font-weight: bold;">Music Landing Page</a><br>
                     <a href="https://alternaet.ga/guess" target="_blank">View Site</a><br>
                     <a href="https://github.com/nauaneeth/alternaet.github.io" target="_blank">View Code</a>
                 </div>
@@ -169,7 +171,7 @@
                 <div class="back">
                     <a href="https://nauaneeth.github.io/colour-randomizer/" target="_blank"><img
                             src="images/work2.png"></a><br>
-                    <a style="color: whitesmoke;">Colour Randomizer</a><br>
+                    <a style="color: whitesmoke; font-weight: bold;">Colour Randomizer</a><br>
                     <a href="https://nauaneeth.github.io/colour-randomizer/" target="_blank">View Site</a><br>
                     <a href="https://github.com/nauaneeth/colour-randomizer/" target="_blank">View Code</a>
                 </div>
@@ -179,19 +181,20 @@
             <div class="work">
                 <div class="back">
                     <a href="https://nauaneeth.github.io/tictactoe" target="_blank"><img src="images/work3.PNG"></a><br>
-                    <a style="color: whitesmoke;">Tic Tac Toe</a><br>
+                    <a style="color: whitesmoke; font-weight: bold;">Tic Tac Toe</a><br>
                     <a href="https://nauaneeth.github.io/tictactoe" target="_blank">View Site</a><br>
                     <a href="https://github.com/nauaneeth/tictactoe" target="_blank">View Code</a>
                 </div>
             </div>
         </div>
+
     </div>
     </div>
+
+
+
 
     <script src="JS/type.js"></script>
-
 </body>
 
 </html>
-
-<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>

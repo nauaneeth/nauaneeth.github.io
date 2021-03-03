@@ -4,6 +4,11 @@
     position: absolute;
 }
 
+.works
+{
+    position: relative;
+}
+
 .work{
     display: none;
 }
